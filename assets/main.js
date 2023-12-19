@@ -34,7 +34,7 @@ closeBtn.onclick = hidemode;
 spinBtn.onclick = () => {
   const percent = Math.ceil(Math.random() * 100);
   let numberran = 0;
-  if(percent <= 40) {
+  if(percent <= 80) {
     numberran = 1;
   } else {
     numberran = Math.ceil(Math.random() * 8);
