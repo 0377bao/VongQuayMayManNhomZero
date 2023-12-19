@@ -4,6 +4,8 @@ const text = document.querySelector('.userText');
 const closeBtn = document.querySelector('.closeBtn');
 const modal = document.querySelector('.modal');
 const modalContetn = document.querySelector('.modal .content');
+const quay = document.querySelector('#quay');
+const votay = document.querySelector('#votay');
 let value = 0;
 let arrayOfLines = [
   'Mất lượt',
@@ -27,6 +29,9 @@ const color = [
 ]
 
 const hidemode = () => {
+  if(!votay.paused) {
+    votay.pause();
+  }
   modal.classList.remove('show');
 }
 
@@ -48,9 +53,12 @@ spinBtn.onclick = () => {
   }
   value =  3600 * (Math.floor(value / 3600) + 1) + (360 - numberran * 45 + 45);
   wheel.style.transform = 'rotate(' + value + 'deg)';
+  quay.play();
   setTimeout(() => {
     modalContetn.innerHTML = arrayOfLines[numberran - 1];
     modal.classList.add('show');
+    votay.currentTime = 0;
+    votay.play();
   }, 5000);
 }
 
