@@ -14,7 +14,7 @@ let arrayOfLines = [
   'Bò húc',
   'Bim bim',
   '7 up',
-];
+]
 const color = [
   "green",
   "blue",
@@ -41,7 +41,7 @@ closeBtn.onclick = hidemode;
 spinBtn.onclick = () => {
   const percent = Math.ceil(Math.random() * 100);
   let numberran = 0;
-  if(percent <= 80) {
+  if(percent <= 70) {
     numberran = 1;
   } else {
     numberran = Math.ceil(Math.random() * 8);
