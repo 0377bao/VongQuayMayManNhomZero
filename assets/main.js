@@ -6,7 +6,14 @@ const modal = document.querySelector('.modal');
 const modalContetn = document.querySelector('.modal .content');
 let value = 0;
 let arrayOfLines = [
-  1,2,3,4,5,6,7,8
+  'Mất lượt',
+  'Nước suối',
+  'Bánh quy',
+  'Bánh oreo',
+  'Sữa milo',
+  'Bò húc',
+  'Bim bim',
+  '7 up',
 ];
 const color = [
   "green",
